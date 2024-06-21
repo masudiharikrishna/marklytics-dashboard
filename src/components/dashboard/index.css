@@ -1,0 +1,121 @@
+.weather-dashboard{
+    background-image: url('https://res.cloudinary.com/dmofgf8v0/image/upload/v1718981082/Thunderstorm_dvnj5e.jpg');
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: sans-serif;
+}
+.main-heading{
+    text-align: center;
+    font-size: 40px;
+    
+}
+.main-paragraph{
+    text-align: center;
+    font-size: 27px;
+    margin: 0px;
+    
+}
+.main-heading span{
+    color: rgb(245, 38, 38);
+    
+}
+.main-paragraph span{
+    color: rgb(15, 171, 83);
+    font-weight: 600;
+    text-decoration: underline;
+}
+.input-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.input-container input{
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    padding: 0px 10px 0px 10px;
+    color: black;
+    font-size: 20px;
+    border: 0px;
+    margin-right: 20px;
+}
+.content{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.error-message{
+    color: red;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-left: -100px;
+}
+.weather-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+.list-container{
+    list-style-type: none;
+    padding-left: 0px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.list-container li{
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+@media (max-width: 768px){
+    .weather-data{
+        flex-direction: column;
+    }
+    .list-container li{
+        font-size: 25px;
+    }
+    .main-heading{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    .main-paragraph{
+        font-size: 21px;
+        padding: 5px 10px 5px 10px;
+    }
+    .input-container{
+        flex-direction: column;
+    }
+    .input-container button{
+        margin-top: 15px;
+    }
+}
+@media (max-width:820px){
+    .weather-data{
+        flex-direction: column;
+    }
+    .main-heading{
+        padding-top: 20px;
+    }
+    .weather-dashboard{
+        background-image: url('https://res.cloudinary.com/dmofgf8v0/image/upload/v1718994902/vecteezy_intense-red-storm-clouds-electrified-by-dramatic-bolts-of_30316083_igp3j0.jpg');
+    }
+}
